@@ -1,0 +1,53 @@
+type token =
+    SEMICOLON
+  | RIGHT_PARENS
+  | RIGHT_BRACKET
+  | RIGHT_BRACES
+  | PIPE
+  | NUMBER of int
+  | LOWER of string
+  | LET
+  | LEFT_PARENS
+  | LEFT_BRACKET
+  | LEFT_BRACES
+  | LAMBDA
+  | INT
+  | FORALL
+  | FATARROW
+  | EQUAL
+  | EOF
+  | COMMA
+  | COLON
+  | ARROW
+val curry_type_apply : Tree.Type.t -> Tree.Type.t list -> Tree.Type.t
+val curry_expr_apply : Tree.Expr.t -> Tree.Expr.t list -> Tree.Expr.t
+val menhir_begin_marker : int
+val xv_type_variable : Tree.Type.t
+val xv_type_unit : Tree.Type.t
+val xv_type_simple : Tree.Type.t
+val xv_type_parens : Tree.Type.t
+val xv_type_int : Tree.Type.t
+val xv_type_forall : Tree.Type.t
+val xv_type_entry_rec : Tree.Type.t
+val xv_type_entry : Tree.Type.t
+val xv_type_arrow : Tree.Type.t
+val xv_type_apply : Tree.Type.t
+val xv_term : Tree.Expr.t option
+val xv_separated_nonempty_list_COMMA_type_apply_ : Tree.Type.t list
+val xv_separated_nonempty_list_COMMA_expr_apply_ : Tree.Expr.t list
+val xv_parens_non_empty_list_COMMA_type_apply__ : Tree.Type.t list
+val xv_parens_non_empty_list_COMMA_expr_apply__ : Tree.Expr.t list
+val xv_non_empty_list_COMMA_type_apply_ : Tree.Type.t list
+val xv_non_empty_list_COMMA_expr_apply_ : Tree.Expr.t list
+val xv_expr_variable : Tree.Expr.t
+val xv_expr_unit : Tree.Expr.t
+val xv_expr_term : Tree.Expr.t
+val xv_expr_simple : Tree.Expr.t
+val xv_expr_parens : Tree.Expr.t
+val xv_expr_number : Tree.Expr.t
+val xv_expr_let : Tree.Expr.t
+val xv_expr_lambda : Tree.Expr.t
+val xv_expr_apply : Tree.Expr.t
+val xv_expr_annot : Tree.Expr.t
+val xv_expr : Tree.Expr.t
+val menhir_end_marker : int
