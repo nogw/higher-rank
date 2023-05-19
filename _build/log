@@ -1,9 +1,9 @@
-# dune exec --display quiet bidir
+# dune exec bidir
 # OCAMLPARAM: unset
 # Shared cache: disabled
-# Workspace root: /home/noge/Desktop/smol
+# Workspace root: /home/noge/Desktop/code/ocaml/smol
 # Auto-detected concurrency: 8
-$ /home/noge/.opam/4.14.1/bin/ocamlc.opt -config > /tmp/dune_4a6a4d_output
+$ /home/noge/.opam/4.14.1/bin/ocamlc.opt -config > /tmp/dune_61f9b3_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -23,13 +23,14 @@ $ /home/noge/.opam/4.14.1/bin/ocamlc.opt -config > /tmp/dune_4a6a4d_output
 #      map
 #        { "DUNE_OCAML_HARDCODED" : "/home/noge/.opam/4.14.1/lib"
 #        ; "DUNE_OCAML_STDLIB" : "/home/noge/.opam/4.14.1/lib/ocaml"
-#        ; "DUNE_SOURCEROOT" : "/home/noge/Desktop/smol"
-#        ; "INSIDE_DUNE" : "/home/noge/Desktop/smol/_build/default"
+#        ; "DUNE_SOURCEROOT" : "/home/noge/Desktop/code/ocaml/smol"
+#        ; "INSIDE_DUNE" : "/home/noge/Desktop/code/ocaml/smol/_build/default"
 #        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "/home/noge/Desktop/smol/_build/install/default/lib"
-#        ; "OCAMLPATH" : "/home/noge/Desktop/smol/_build/install/default/lib"
+#            "/home/noge/Desktop/code/ocaml/smol/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/home/noge/Desktop/code/ocaml/smol/_build/install/default/lib"
 #        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "/home/noge/Desktop/smol/_build/install/default/lib/toplevel"
+#            "/home/noge/Desktop/code/ocaml/smol/_build/install/default/lib/toplevel"
 #        ; "OCAML_COLOR" : "always"
 #        ; "OPAMCOLOR" : "always"
 #        }
@@ -109,8 +110,8 @@ $ /home/noge/.opam/4.14.1/bin/ocamlc.opt -config > /tmp/dune_4a6a4d_output
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/.sandbox/55c51793162b31ec144f7d9d2ece1616/default && .ppx/6f0f1181ee7784793a88a5fec88fa380/ppx.exe --cookie 'library-name="bidir"' -o src/bidir.pp.ml --impl src/bidir.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/.sandbox/fbb6a08e4aa5c912b436ed34f96721cc/default && .ppx/6f0f1181ee7784793a88a5fec88fa380/ppx.exe --cookie 'library-name="bidir"' -o src/bidir.pp.ml --impl src/bidir.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
 $ (cd _build/default && /home/noge/.opam/4.14.1/bin/ocamldep.opt -modules -impl src/bidir.pp.ml) > _build/default/src/.bidir.objs/bidir.pp.ml.d
 $ (cd _build/default && /home/noge/.opam/4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.bidir.objs/byte -I src/.bidir.objs/native -I /home/noge/.opam/4.14.1/lib/gen -I /home/noge/.opam/4.14.1/lib/menhirLib -I /home/noge/.opam/4.14.1/lib/ppx_deriving/runtime -I /home/noge/.opam/4.14.1/lib/result -I /home/noge/.opam/4.14.1/lib/sedlex -I /home/noge/.opam/4.14.1/lib/seq -intf-suffix .ml -no-alias-deps -opaque -open Bidir__ -o src/.bidir.objs/native/bidir.cmx -c -impl src/bidir.pp.ml)
-$ (cd _build/default && /home/noge/.opam/4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o src/bidir.cmxa src/.bidir.objs/native/bidir__.cmx src/.bidir.objs/native/bidir__Debug.cmx src/.bidir.objs/native/bidir__Name.cmx src/.bidir.objs/native/bidir__Tree.cmx src/.bidir.objs/native/bidir__Printer.cmx src/.bidir.objs/native/bidir__Typer.cmx src/.bidir.objs/native/bidir__Parser.cmx src/.bidir.objs/native/bidir__Lexer.cmx src/.bidir.objs/native/bidir__Id.cmx src/.bidir.objs/native/bidir.cmx)
+$ (cd _build/default && /home/noge/.opam/4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o src/bidir.cmxa src/.bidir.objs/native/bidir__.cmx src/.bidir.objs/native/bidir__Name.cmx src/.bidir.objs/native/bidir__Tree.cmx src/.bidir.objs/native/bidir__Printer.cmx src/.bidir.objs/native/bidir__Typer.cmx src/.bidir.objs/native/bidir__Parser.cmx src/.bidir.objs/native/bidir__Lexer.cmx src/.bidir.objs/native/bidir.cmx)
 $ (cd _build/default && /home/noge/.opam/4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /home/noge/.opam/4.14.1/lib/menhirLib/menhirLib.cmxa -I /home/noge/.opam/4.14.1/lib/ocaml /home/noge/.opam/4.14.1/lib/gen/gen.cmxa /home/noge/.opam/4.14.1/lib/sedlex/sedlex.cmxa /home/noge/.opam/4.14.1/lib/result/result.cmxa /home/noge/.opam/4.14.1/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxa src/bidir.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)

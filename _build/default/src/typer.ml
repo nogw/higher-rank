@@ -485,7 +485,7 @@ module Infer = struct
     match synth Context.empty expr with
     | Ok (context, ty) ->
         let _, ty = Context.apply ty context in
-        Debug.debug `Debug "(%a) : %a\n" Printer.pp_expr expr Printer.pp_type ty ;
-        Ok (ty)
+        Format.printf "(%a) : %a\n" Printer.pp_expr expr Printer.pp_type ty ;
+        Ok ty
     | Error err -> raise (TyperErr err)
 end
